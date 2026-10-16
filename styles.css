@@ -1,0 +1,105 @@
+
+body{
+font-family: Arial, sem-serif;
+background-color: #ffe6eb;
+text-align: center;
+padding: 30px 15px;
+color: #4a4a4a
+}
+.title, h1 {
+  color: #c2185b;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+h2, h3 {
+  color: #777777;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+a{
+  color: #c2185b;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #880e4f;
+  text-decoration: underline;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+ul a {
+  font-size: 18px;
+  display: inline-block;
+  margin: 8px 0;
+}
+ul a:hover {
+  color: #880e4f;
+  text-decoration: underline;
+}
+hr {
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #f8bbd0;
+  margin: 20px auto;
+}
+.produto p {
+font-weight: bold;
+color: #333333;
+margin: 10px o;
+}
+.produto img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 6px;
+}
+label {
+  font-size: 14px;;
+}
+input[type="number"] {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+button {
+  background-color: #c2185b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+button:hover {
+  background-color: #880e4f;
+}
+#lista-carrinho {
+list-style-type: none;
+padding: 0;
+margin: 15px 0;
+}
+form {
+  max-width: 320px;
+  margin: 20px auto;
+  text-align: left;
+}
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+form input[type="text"], form input[type=number] {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+form button, form input[type="reset"] {
+  margin-top: 15px;
+  padding: 6px 12px;
+  cursor: pointer;
+}

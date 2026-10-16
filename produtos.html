@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Produtos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <meta name="description" content="Site da loja online Eternize Polaroids, que produz fotos no estilo polaroid e presentes personalizados">
+    <meta name="keywords" content="Polaroid, fotos, fotos personalizadas, lembranças, presente personalizado, presente, quadro">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta charset="utf-8">
+      </head>
+  <body>
+  <h1>Produtos</h1>
+  <!-- Lista de produtos -->
+   <div class="produto">
+    <img src="imagens/Pacotes de Polaroids/polaroid.jpg" alt="Polaroid">
+    <p>Polaroid clássica 7,5cmx10cm - R$3.00 (cada)</p>
+    <!-- Quantidade mínima: 4 unidades -->
+    <label for="qtd-polaroid">Quantidade (mínimo 4):</label>
+    <input type="number" id="qtd-polaroid" min="4" value="4" style="width: 50px;">
+    <!--Carrinho-->
+    <button onclick=" adicionarAoCarrinho('Polaroid clássica ', 3.00, 'qtd-polaroid', 4)">Adicionar ao Carrinho</button>
+   </div>
+
+   <br>
+
+   <div class="produto">
+    <img src="imagens/Pacotes de Polaroids ima/ima2.jpg" alt="Polaroid imã">
+    <p>Polaroid com imã 7,5cmx10cm - R$4.50 (cada)</p>
+    <!-- Quantidade mínima: 4 unidades -->
+    <label for="qtd-polaroid">Quantidade (mínimo 4):</label> <!--regra da loja-->
+    <input type="number" id="qtd-polaroid" min="4" value="4" style="width: 50px;">
+    <!--Carrinho-->
+    <button onclick=" adicionarAoCarrinho('Polaroid com imã ', 4.50, 'qtd-polaroid', 4)">Adicionar ao Carrinho</button>
+   </div>
+
+   <br>
+<!-- A partir daqui os produtos não tem quantidade mínima-->
+   <div class="produto">
+    <img src="imagens/Polaroid de mesa/polaroidmesa.jpg" alt="Polaroid de mesa">
+    <p>Polaroid de mesa 7,5cmx10cm - R$17.00</p>
+    <label for="qtd-polaroidmesa">Quantidade:</label>
+    <input type="number" id="qtd-polaroidmesa" min="1" value="1" style="width: 50px;">
+    <button onclick="adicionarAoCarrinho('Polaroid de mesa', 17.00, 'qtd-polaroidmesa', 1)">Adicionar ao Carrinho</button>
+
+    <br>
+
+    <div class="produto">
+    <img src="imagens/Mini álbum sanfonado/minialbumsanfonado.jpeg" alt="Mini álbum sanfonado">
+    <p>Mini álbum sanfonado - R$12.00</p>
+    <label for="qtd-album">Quantidade:</label>
+    <input type="number" id="qtd-album" min="1" value="1" style="width: 50px;">
+    <button onclick="adicionarAoCarrinho('Mini álbum sanfonado', 12.00, 'qtd-album', 1)">Adicionar ao Carrinho</button>
+   </div>
+
+   <br>
+
+   <div class="produto">
+    <img src="imagens/Cone buquê/cone.jpg" alt="Cone buquê">
+    <p>Cone buquê - R$22.00</p>
+    <label for="qtd-cone">Quantidade:</label>
+    <input type="number" id="qtd-cone" min="1" value="1" style="width: 50px;">
+    <button onclick="adicionarAoCarrinho('Cone buquê', 22.00, 'qtd-cone', 1)">Adicionar ao Carrinho</button>
+
+    <br>
+
+    <div class="produto">
+    <img src="imagens/Quadros personalizados/quadro.png" alt="Quadro personalizado">
+    <p>Quadro personalizado 10cmx15cm - R$22.00</p>
+    <label for="qtd-quadro">Quantidade:</label>
+    <input type="number" id="qtd-quadro" min="1" value="1" style="width: 50px;">
+    <button onclick="adicionarAoCarrinho('Quadro personalizado', 24.00, 'qtd-quadro', 1)">Adicionar ao Carrinho</button>
+
+    <br>
+
+    <div class="produto">
+    <img src="imagens/Caneca personalizada/caneca.jpg" alt="Caneca personalizada">
+    <p>Caneca personalizada - R$30.00</p>
+    <label for="qtd-caneca">Quantidade:</label>
+    <input type="number" id="qtd-caneca" min="1" value="1" style="width: 50px;">
+    <button onclick="adicionarAoCarrinho('Caneca personalizada', 30.00, 'qtd-caneca', 1)">Adicionar ao Carrinho</button>
+
+    <br>
+
+    <div class="produto">
+    <img src="imagens/Special Love/box.jpg" alt="Box Love">
+    <p>Box Love - R$85.00</p>
+    <label for="qtd-box">Quantidade:</label>
+    <input type="number" id="qtd-box" min="1" value="1" style="width: 50px;">
+    <button onclick="adicionarAoCarrinho('Box Love', 85.00, 'qtd-box', 1)">Adicionar ao Carrinho</button>
+
+   <hr>
+   <!--Carrinho-->
+   <h2> Seu Carrinho</h2>
+   <ul id="lista-carrinho">
+    <!-- Os itens vão aparecer aqui pelo JavaScript -->
+   </ul>
+   <!--Os pedidos serão enviados pelo WhatsApp, onde o cliente irá mandar mandar o que for necessário para a produçao dos produtos-->
+   <button onclick="enviarWhatsApp()">Finalizar pedido pelo Whatsapp</button>
+   <br><br>
+  <a href="index.html"><br> Voltar para o início</a>
