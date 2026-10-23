@@ -28,6 +28,11 @@ a:hover {
 ul{
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #f8bbd0;
+  overflow: hidden;
+
 }
 ul a {
   font-size: 18px;
@@ -37,6 +42,12 @@ ul a {
 ul a:hover {
   color: #880e4f;
   text-decoration: underline;
+
+}
+li a:hover{
+    background-color: #880e4f;
+    color: #ffe6eb;
+    font-size: 1.5cm;
 }
 hr {
   width: 80%;
